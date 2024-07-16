@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre Rendez-vous - Dr. Manel Ben Khedija</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Prendre Rendez-vous</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="videos.html">Vidéos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="contact-form">
+        <h2>Formulaire de Rendez-vous</h2>
+        <form action="submit_appointment.php" method="post">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="date">Date préférée</label>
+            <input type="date" id="date" name="date" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <div class="map">
+        <h2>Notre Emplacement</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434504275!2d-122.4008555846815!3d37.79370467975785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e90bba03%3A0x4d37a6a4e6f1b0b8!2s555%20California%20St%2C%20San%20Francisco%2C%20CA%2094104%2C%20USA!5e0!3m2!1sen!2s!4v1598831369043!5m2!1sen!2s" frameborder="0" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    <div class="schedule">
+        <h2>Horaires de Travail</h2>
+        <p>Lundi - Vendredi: 9:00 - 17:00</p>
+        <p>Samedi: 10:00 - 14:00</p>
+        <p>Dimanche: Fermé</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Dr. Manel Ben Khedija. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
