@@ -1,140 +1,215 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/*partie header de la page*/
+*{
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
-
-header {
-    background-color: #1E90FF;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header p {
-    margin: 5px 0;
-}
-
-nav {
-    background-color: #87CEFA;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+header{
+    border-radius: 3%;
     display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.content {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-section {
-    background-color: white;
-    margin-bottom: 30px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #1E90FF;
-    border-bottom: 2px solid #87CEFA;
-    padding-bottom: 10px;
-}
-
-.bio img {
     width: 100%;
-    max-width: 300px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.service, .video {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: rgb(238, 255, 255);
     justify-content: space-between;
 }
-.service div p{
-    width: 300px;
+#div1{
+    margin-top: 0.1%;
+    width: 30%;
+}
+#div2{
+    width: 70%;
+}
+header img{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+header h1 {
+    margin-top: 4%;
+    font-size: 50px;
+    margin-left:20%;
+    color: rgb(104, 182, 255);
+}
+@media only screen and (max-width:650px) {
+    header img{
+        width: 100%;
+    }
+    
+    header h1{
+        font-size: 25px;
+        margin-left:5%;
+
+    }
+    #div2{
+        width: 100%;
+    }
+    
+}
+/* partie main de la page */
+#main{
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+article{
+    text-indent: 5%;    
+    font-size: x-large;
     line-height: 2;
+    display: flex;
+    justify-content: space-between;
 }
-.service img, .video iframe {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.contact-form, .appointment-form {
-    max-width: 600px;
-    margin: 0 auto;
+#divfrancais{
+    width: 60%;
 }
 
-.contact-form label, .appointment-form label {
-    display: block;
-    margin: 10px 0 5px;
+#divarabe {
+direction: rtl;
+width: 40%;
+
 }
 
-.contact-form input, .contact-form textarea, .appointment-form input, .appointment-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+h2{
+    color:rgb(104, 182, 255);
+    font-family:Verdana;
+}
+figure{
+    font-weight: bold;
+    font-size: larger;
+    font-family:sans-serif;
+    color:rgb(0, 3, 51) ;
 }
 
-.contact-form button, .appointment-form button {
-    background-color: #1E90FF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.contact-form button:hover, .appointment-form button:hover {
-    background-color: #1C86EE;
-}
-
-.map iframe {
-    width: 100%;
-    height: 400px;
-    border: 0;
-}
-
-footer {
-    background-color: #1E90FF;
-    color: white;
+#divinp{
+    text-indent: -5%;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-left: 50px;
+    padding: 10px;
 }
 
-footer p {
-    margin: 0;
+#divinp input{
+    font-size: large;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 1s;
+}
+#divinp input:hover{
+    background-color: rgb(104, 182, 255);
+}
+main article div img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+@media only screen and (max-width:650px){
+    #main{
+        border: 3px black solid;
+        border-radius: 10px;
+        width: 98%;
+        margin: auto;
+    }
+    article{
+        text-indent: 5px;
+        font-size: 15px;
+        margin-top:10px;
+        line-height: 2;
+    }
+    h2{
+        color:rgb(104, 182, 255);
+        font-family:Verdana;
+        font-size: 16px;
+    }
+    figure{
+        font-weight: bold;
+        font-size: 16px;
+        font-family:sans-serif;
+        color:rgb(0, 3, 51) ;
+    }
+    #divfrancais{
+        line-height: 2.4;
+    }
+    #divfrancais{
+        font-size: 13px;
+    }
+    #divfrancais h2{
+        font-size: 13px;
+    }
+    #divfrancais figure{
+        font-size: 13px;
+    }
+}
+
+/*page rendez-vous */
+fieldset{
+    margin: auto;
+    border-radius: 10px;
+    width: 30%;
+    line-height: 3;
+    text-align: center;
+    padding: 10px;
+}
+
+fieldset div{
+    font-size: x-large;
+}
+fieldset div input{
+    width: 40px;
+}
+
+fieldset .inp{
+    font-size: larger;
+    text-align: center;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+}
+#main2{
+    background-image: url(files/26807.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+legend{
+    text-align: start;
+    color: rgb(128, 162, 255);
+    font-size: x-large;
+}
+#main2 h2{
+    padding-top: 1%;
+    text-align: center;
+    color: red;
+}
+.divinp{
+    font-size: x-large;
+}
+.divinp input{
+    border: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 1s;
+    width: 100px;
+}
+.divinp input:hover{
+    background-color: rgb(104, 182, 255);
+}
+#go_back{
+    width: 70px ;
+    height: 70px;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+}
+#go_back:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width:650px){
+
+    
+    fieldset .inp{
+        font-size: larger;
+        text-align: center;
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
 }
