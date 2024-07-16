@@ -202,3 +202,15 @@ legend{
 #go_back:hover{
     cursor: pointer;
 }
+@media only screen and (max-width:650px){
+
+    
+    fieldset .inp{
+        font-size: larger;
+        text-align: center;
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+}
