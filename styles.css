@@ -1,0 +1,142 @@
+/*partie header de la page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    border-radius: 3%;
+    display: flex;
+    width: 100%;
+    background-color: rgba(238, 255, 255, 0.486);
+    justify-content: space-between;
+}
+#div1{
+    margin-top: 0.1%;
+    width: 30%;
+}
+#div2{
+    width: 70%;
+}
+header img{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+header h1 {
+    margin-top: 4%;
+    font-size: 50px;
+    margin-left:20%;
+    color: rgb(104, 182, 255);
+}
+@media only screen and (max-width:650px) {
+    header img{
+        width: 100%;
+    }
+    
+    header h1{
+        font-size: 25px;
+        margin-left:5%;
+
+    }
+    #div2{
+        width: 100%;
+    }
+    
+}
+/* partie main de la page */
+
+main{
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+article{
+    text-indent: 5%;    
+    font-size: x-large;
+    margin-top:30px;
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+}
+#divfrancais{
+    width: 60%;
+}
+
+#divarabe {
+direction: rtl;
+width: 40%;
+
+}
+
+
+h2{
+    color:rgb(104, 182, 255);
+    font-family:Verdana;
+}
+figure{
+    font-weight: bold;
+    font-size: larger;
+    font-family:sans-serif;
+    color:rgb(0, 3, 51) ;
+}
+
+#divinp{
+    text-indent: -5%;
+    text-align: center;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+#divinp input{
+    font-size: large;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 1s;
+}
+#divinp input:hover{
+    background-color: rgb(104, 182, 255);
+}
+main article div img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+@media only screen and (max-width:650px){
+    main{
+        border: 3px black solid;
+        border-radius: 10px;
+        width: 98%;
+        margin: auto;
+    }
+    article{
+        text-indent: 5px;
+        font-size: 15px;
+        margin-top:10px;
+        line-height: 2;
+    }
+    h2{
+        color:rgb(104, 182, 255);
+        font-family:Verdana;
+        font-size: 16px;
+    }
+    figure{
+        font-weight: bold;
+        font-size: 16px;
+        font-family:sans-serif;
+        color:rgb(0, 3, 51) ;
+    }
+    #divfrancais{
+        line-height: 2.4;
+    }
+    #divfrancais{
+        font-size: 13px;
+    }
+    #divfrancais h2{
+        font-size: 13px;
+    }
+    #divfrancais figure{
+        font-size: 13px;
+    }
+}
